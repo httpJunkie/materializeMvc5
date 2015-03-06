@@ -1,0 +1,60 @@
+﻿@{
+    ViewBag.Title = "Basestyle.Net | Base Style Dot Net";
+    ViewBag.InitModule = "homeIndex";
+}
+<div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+        <div class="container">
+            <br><br>
+            <h1 class="header center grey-text text-lighten-2">ASP.NET MVC 5.2 MATERIALIZED</h1>
+            <div class="row center">
+                <h5 class="header col s12 light">ASP.NET MVC is a free web framework for building great Web sites and Web applications using C#, HTML, CSS and JavaScript.</h5>
+            </div>
+            <div class="row center">
+                <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light blue-grey darken-1">Learn more &raquo;</a>
+            </div>
+            <br><br>
+        </div>
+    </div>
+    <div class="parallax"><img src="/Images/background1.jpg" alt="Unsplashed background img 2"></div>
+</div>
+
+@*Angular Routes Load Here*@
+<div data-ng-view=""></div>
+
+<div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+        <div class="container">
+            <div class="row center">
+                <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+            </div>
+        </div>
+    </div>
+    <div class="parallax"><img src="/Images/background2.jpg" alt="Unsplashed background img 2"></div>
+</div>
+
+<div class="container">
+    <div class="section">
+        <div class="row">
+            <div class="col s12 center">
+                <h3><i class="mdi-content-send blue-grey-text"></i></h3>
+                <h4>Contact Us</h4>
+                <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+        <div class="container">
+            <div class="row center">
+                <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+            </div>
+        </div>
+    </div>
+    <div class="parallax"><img src="/Images/background3.jpg" alt="Unsplashed background img 3"></div>
+</div>
+@section ngScripts {
+    <script src="~/ng-modules/home-index.js"></script>
+}

@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="@ViewBag.InitModule">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @RenderSection("JavascriptInHead", required: false)
+    @RenderSection("CssInHead", required: false)
+</head>
+<body @RenderSection("BodyOnLoad", required: false)>
+    <nav class="blue-grey lighten-1" role="navigation">
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="#" class="brand-logo hide-on-med-and-down">
+                <img src="~/Images/logoBlueGray.png" />
+            </a>
+            <ul class="right">
+                <li><a class="white-text" href="#/">Home</a></li>
+                <li><a class="white-text" href="#/about">About</a></li>
+            </ul>
+            <ul id="nav-mobile" class="side-nav">
+                <li><a class="white-text" href="#/">Home</a></li>
+                <li><a class="white-text" href="#/about">About</a></li>
+            </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+        </div>
+    </nav>
+    @RenderBody()
+    <footer class="page-footer blue-grey darken-3">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Basestyle</h5>
+                    <p class="grey-text text-lighten-4">We are a team of ASP.NET MVC & Web API Developers who love CSS & JavaScript, we are not your typical Microsoft black matter developers.</p>
+
+                </div>
+                <div class="col l3 s12">
+                    <h5 class="white-text">Settings</h5>
+                    <ul>
+                        <li><a class="white-text" href="#!">Link 1</a></li>
+                        <li><a class="white-text" href="#!">Link 2</a></li>
+                        <li><a class="white-text" href="#!">Link 3</a></li>
+                        <li><a class="white-text" href="#!">Link 4</a></li>
+                    </ul>
+                </div>
+                <div class="col l3 s12">
+                    <h5 class="white-text">Connect</h5>
+                    <ul>
+                        <li><a class="white-text" href="#!">Link 1</a></li>
+                        <li><a class="white-text" href="#!">Link 2</a></li>
+                        <li><a class="white-text" href="#!">Link 3</a></li>
+                        <li><a class="white-text" href="#!">Link 4</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                Made by <a class="blue-grey-text text-lighten-2" href="http://materializecss.com">Materialize</a>
+            </div>
+        </div>
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/angular")
+    @Scripts.Render("~/bundles/materializeJs")
+    @RenderSection("scripts", required: false)
+    @RenderSection("JavascriptEndBody", required: false)
+    @*All Angular Scripts will load here*@
+    @RenderSection("ngScripts", required: false)
+    @*Render Section Scripts may be used by VS2013 to add Scripts so leave here*@
+    @RenderSection("scripts", required: false)
+</body>
+</html>
