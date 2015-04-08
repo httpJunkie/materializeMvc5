@@ -175,6 +175,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\WorkController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -192,9 +193,12 @@
     <Content Include="Content\materialize\sass\materialize.css">
       <DependentUpon>materialize.scss</DependentUpon>
     </Content>
+    <Content Include="Content\Style.css">
+      <DependentUpon>Style.scss</DependentUpon>
+    </Content>
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Style.css" />
+    <None Include="Content\Style.scss" />
     <Content Include="Content\materialize\font\roboto\Roboto-Thin.ttf" />
     <Content Include="Content\materialize\font\roboto\Roboto-Regular.ttf" />
     <Content Include="Content\materialize\font\roboto\Roboto-Medium.ttf" />
@@ -203,11 +207,16 @@
     <Content Include="Content\materialize\font\material-design-icons\Material-Design-Icons.woff" />
     <Content Include="Content\materialize\font\material-design-icons\Material-Design-Icons.ttf" />
     <Content Include="Content\materialize\font\material-design-icons\Material-Design-Icons.eot" />
+    <Content Include="Images\avatar.jpg" />
     <Content Include="Images\background1.jpg" />
     <Content Include="Images\background2.jpg" />
     <Content Include="Images\background3.jpg" />
     <Content Include="Images\logoBlueGray.png" />
+    <Content Include="Images\office.jpg" />
+    <Content Include="ng-controllers\about.js" />
+    <Content Include="ng-controllers\home.js" />
     <Content Include="ng-modules\home-index.js" />
+    <Content Include="ng-routes\route.js" />
     <Content Include="ng-templates\aboutView.html" />
     <Content Include="ng-templates\homeView.html" />
     <Content Include="Quarantine\font\material-design-icons\Material-Design-Icons.eot" />
@@ -371,6 +380,7 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Work\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

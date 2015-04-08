@@ -15,12 +15,14 @@
                 <img src="~/Images/logoBlueGray.png" />
             </a>
             <ul class="right">
-                <li><a class="white-text" href="#/">Home</a></li>
-                <li><a class="white-text" href="#/about">About</a></li>
+                <li><a class="white-text" href="/#/">Home</a></li>
+                <li><a class="white-text" href="/#/about">About</a></li>
+                <li><a class="white-text" href="/work#/portfolio">Work</a></li>
             </ul>
             <ul id="nav-mobile" class="side-nav">
-                <li><a class="white-text" href="#/">Home</a></li>
-                <li><a class="white-text" href="#/about">About</a></li>
+                <li><a class="grey-text" href="/#/">Home</a></li>
+                <li><a class="grey-text" href="/#/about">About</a></li>
+                <li><a class="grey-text" href="/work#/portfolio">Work</a></li>
             </ul>
             <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
         </div>
@@ -31,25 +33,25 @@
             <div class="row">
                 <div class="col l6 s12">
                     <h5 class="white-text">Basestyle</h5>
-                    <p class="grey-text text-lighten-4">We are a team of ASP.NET MVC & Web API Developers who love CSS & JavaScript, we are not your typical Microsoft black matter developers.</p>
+                    <p class="grey-text text-lighten-2">We are a team of ASP.NET MVC & Web API Developers who love CSS & JavaScript, we are not your typical Microsoft black matter developers.</p>
 
                 </div>
                 <div class="col l3 s12">
                     <h5 class="white-text">Resources</h5>
                     <ul>
-                        <li><a class="white-text" href="http://www.google.com/design/spec/material-design/introduction.html">Material Design</a></li>
-                        <li><a class="white-text" href="http://materializecss.com/getting-started.html">Materialize</a></li>
-                        <li><a class="white-text" href="http://callemall.github.io/material-ui/#/">Material UI</a></li>
-                        <li><a class="white-text" href="http://www.cmu.edu/">Carnegie Mellon</a></li>
+                        <li><a class="grey-text" href="http://www.google.com/design/spec/material-design/introduction.html">Material Design</a></li>
+                        <li><a class="grey-text" href="http://materializecss.com/getting-started.html">Materialize</a></li>
+                        <li><a class="grey-text" href="http://callemall.github.io/material-ui/#/">Material UI</a></li>
+                        <li><a class="grey-text" href="http://www.cmu.edu/">Carnegie Mellon</a></li>
                     </ul>
                 </div>
                 <div class="col l3 s12">
                     <h5 class="white-text">Links</h5>
                     <ul>
-                        <li><a class="white-text" href="http://www.polymer-project.org/">Polymer</a></li>
-                        <li><a class="white-text" href="http://polymer-topeka.appspot.com/">Topeka</a></li>
-                        <li><a class="white-text" href="httpJunkie.com">httpJunkie</a></li>
-                        <li><a class="white-text" href="https://scotch.io/">Scotch.io</a></li>
+                        <li><a class="grey-text" href="http://www.polymer-project.org/">Polymer</a></li>
+                        <li><a class="grey-text" href="http://polymer-topeka.appspot.com/">Topeka</a></li>
+                        <li><a class="grey-text" href="httpJunkie.com">httpJunkie</a></li>
+                        <li><a class="grey-text" href="https://scotch.io/">Scotch.io</a></li>
                     </ul>
                 </div>
             </div>
@@ -68,7 +70,7 @@
     @RenderSection("JavascriptEndBody", required: false)
     @*All Angular Scripts will load here*@
     @RenderSection("ngScripts", required: false)
-    @*Render Section Scripts may be used by VS2013 to add Scripts so leave here*@
+    @*Other Scripts Here*@
     @RenderSection("scripts", required: false)
 </body>
 </html>
