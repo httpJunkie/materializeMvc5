@@ -4,7 +4,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
     <title>@ViewBag.Title - Materialize MVC 5 Application</title>
-    @Styles.Render("~/Content/css")
+    @*@Styles.Render("~/Content/css")*@
+    <link href="~/Content/materialize/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="~/Content/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
     @RenderSection("JavascriptInHead", required: false)
     @RenderSection("CssInHead", required: false)
 </head>
@@ -64,11 +66,14 @@
     </footer>
 
     @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/angular")
+    @**@
     @Scripts.Render("~/bundles/materializeJs")
     @RenderSection("scripts", required: false)
     @RenderSection("JavascriptEndBody", required: false)
     @*All Angular Scripts will load here*@
+    @*@Scripts.Render("~/bundles/angular")*@
+    @*^Uncomment this^ to use Angular on every page,
+        currently Angular is being lodaed at the view level*@
     @RenderSection("ngScripts", required: false)
     @*Other Scripts Here*@
     @RenderSection("scripts", required: false)

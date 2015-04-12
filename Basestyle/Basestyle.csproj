@@ -186,8 +186,8 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\materialize\font\material-design-icons\LICENSE.txt" />
-    <Content Include="Content\materialize\font\material-design-icons\Material-Design-Icons.svg" />
+    <Content Include="Content\font\material-design-icons\LICENSE.txt" />
+    <Content Include="Content\font\material-design-icons\Material-Design-Icons.svg" />
     <Content Include="Content\materialize\materialize.css" />
     <Content Include="Content\materialize\materialize.min.css" />
     <Content Include="Content\materialize\sass\materialize.css">
@@ -198,15 +198,15 @@
     </Content>
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Content\font\material-design-icons\Material-Design-Icons.eot" />
+    <Content Include="Content\font\material-design-icons\Material-Design-Icons.ttf" />
+    <Content Include="Content\font\material-design-icons\Material-Design-Icons.woff" />
+    <Content Include="Content\font\roboto\Roboto-Bold.ttf" />
+    <Content Include="Content\font\roboto\Roboto-Light.ttf" />
+    <Content Include="Content\font\roboto\Roboto-Medium.ttf" />
+    <Content Include="Content\font\roboto\Roboto-Regular.ttf" />
+    <Content Include="Content\font\roboto\Roboto-Thin.ttf" />
     <None Include="Content\Style.scss" />
-    <Content Include="Content\materialize\font\roboto\Roboto-Thin.ttf" />
-    <Content Include="Content\materialize\font\roboto\Roboto-Regular.ttf" />
-    <Content Include="Content\materialize\font\roboto\Roboto-Medium.ttf" />
-    <Content Include="Content\materialize\font\roboto\Roboto-Light.ttf" />
-    <Content Include="Content\materialize\font\roboto\Roboto-Bold.ttf" />
-    <Content Include="Content\materialize\font\material-design-icons\Material-Design-Icons.woff" />
-    <Content Include="Content\materialize\font\material-design-icons\Material-Design-Icons.ttf" />
-    <Content Include="Content\materialize\font\material-design-icons\Material-Design-Icons.eot" />
     <Content Include="Images\avatar.jpg" />
     <Content Include="Images\background1.jpg" />
     <Content Include="Images\background2.jpg" />
@@ -319,11 +319,13 @@
     <Content Include="Scripts\materialize\bin\materialize.min.js" />
     <Content Include="Scripts\materialize\buttons.js" />
     <Content Include="Scripts\materialize\cards.js" />
+    <Content Include="Scripts\materialize\character_counter.js" />
     <Content Include="Scripts\materialize\collapsible.js" />
     <Content Include="Scripts\materialize\date_picker\picker.date.js" />
     <Content Include="Scripts\materialize\date_picker\picker.js" />
     <Content Include="Scripts\materialize\dropdown.js" />
     <Content Include="Scripts\materialize\forms.js" />
+    <Content Include="Scripts\materialize\global.js" />
     <Content Include="Scripts\materialize\hammer.min.js" />
     <Content Include="Scripts\materialize\init.js" />
     <Content Include="Scripts\materialize\jquery.easing.1.3.js" />
@@ -381,6 +383,9 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Work\Index.cshtml" />
+    <Content Include="Scripts\materialize\materialize.min.js.map">
+      <DependentUpon>materialize.min.js</DependentUpon>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
